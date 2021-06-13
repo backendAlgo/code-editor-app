@@ -5,6 +5,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import ProtectedRoute from "../auth/ProtectedRoute";
 import routes from "./routes";
 import Loader from "../components/common/Loader";
+import { Header } from "../components/common/Header/Header";
 
 const useStyles = makeStyles(() => ({
     main: {
@@ -25,7 +26,7 @@ const Routes = () => {
     }
     return (
         <div className={classes.main}>
-            <div>Header</div>
+            <Header />
             <div className={classes.page}>
                 <Switch>
                     <ProtectedRoute
