@@ -6,7 +6,8 @@ import ProtectedRoute from "../auth/ProtectedRoute";
 import routes from "./routes";
 import Loader from "../components/common/Loader";
 import { Header } from "../components/common/Header/Header";
-import Home from "../pages/Home/Home";
+import Home from "../pages/home/Home";
+import CodeEditor from "../pages/codeEditor/CodeEditor";
 
 const useStyles = makeStyles(() => ({
     main: {
@@ -25,8 +26,6 @@ const Routes = () => {
     if (isLoading) {
         return <Loader />;
     }
-
-    const CodeEditor = () => <div>Code Editor</div>;
 
     return (
         <div className={classes.main}>

@@ -1,6 +1,6 @@
 export default interface FileViewerStructure {
     id: string;
     name: string;
-    extensin?: string;
+    extension?: string;
     children?: FileViewerStructure[];
 }
