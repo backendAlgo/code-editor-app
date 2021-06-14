@@ -7,7 +7,7 @@ import {
     Switch,
 } from "@material-ui/core";
 import React from "react";
-import { toggleDarkMode } from "../../../store/dark-mode/reducer";
+import { toggleDarkMode } from "../../../store/reducers/dark-mode/reducer";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import DarkModeIcon from "@material-ui/icons/Brightness2";
 import UnAuthenticatedButton from "./UnAuthenticatedButton";
